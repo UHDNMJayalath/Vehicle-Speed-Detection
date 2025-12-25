@@ -80,7 +80,7 @@ while True:
                 
                 if counter_down.count(id) == 0:
                     counter_down.append(id)
-                    distance = 25 
+                    distance = 30 
                     a_speed_ms = distance / elapsed_time
                     a_speed_kh = a_speed_ms * 3.6
                     
@@ -97,7 +97,7 @@ while True:
                 
                 if counter_up.count(id) == 0:
                     counter_up.append(id)
-                    distance1 = 25 
+                    distance1 = 30 
                     a_speed_ms1 = distance1 / elapsed1_time
                     a_speed_kh1 = a_speed_ms1 * 3.6
                     
@@ -143,7 +143,7 @@ while True:
 
     
     cv2.putText(frame, 'Dev: Nishaka Mahesh Jayalath', (20, 480), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
-    
+
     # ---------------------------------------------------------
 
     cv2.imshow("frames", frame)
